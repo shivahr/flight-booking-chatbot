@@ -51,11 +51,11 @@ public class FlightBookingDemo {
 	}
 
 	private static void bookFlight(Map<String, Object> context) throws InterruptedException {
-		String fromAirport = (String) context.get(FROM_CITY_KEY);
-		String toAirport = (String) context.get(TO_CITY_KEY);
+		String fromCity = (String) context.get(FROM_CITY_KEY);
+		String toCity = (String) context.get(TO_CITY_KEY);
 		String departureDate = (String) context.get(DATE_KEY);
 		String departureTiime = (String) context.get(TIME_KEY);
-		String responseText = "(Calling backend API to search for flights from " + fromAirport + " to " + toAirport
+		String responseText = "(Calling backend API to search for flights from " + fromCity + " to " + toCity
 				+ " on " + departureDate + " starting at " + departureTiime + ")";
 		System.out.println(responseText);
 	}
